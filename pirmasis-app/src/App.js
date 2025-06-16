@@ -1,0 +1,61 @@
+import logo from './logo.svg';
+import './App.css';
+import { useEffect, useState} from 'react';
+import Komponentas6 from './Komponentai/komponentas6';
+import Paslaugos from './Paslaugos/Paslaugos';
+function App() {
+  const [number, setNumber]=useState(7)
+  const [btnPresses, setBtnPresses]=useState(0)
+  function changeNumber(){
+    setNumber(number+1)
+  }
+  useEffect(changeNumber,[btnPresses])
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Paslaugos/>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          {number} : {btnPresses}
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+    
+        </a>
+        <button onClick={()=>{
+          setBtnPresses(btnPresses+1)
+        }}>ClickMe</button>
+      <Komponentas4/>
+      <Komponentas5/>
+      <Komponentas6/>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+function Komponentas4 (){
+  return(
+    <p>
+      Tekstas
+    </p>
+  )
+}
+
+const Komponentas5=()=>{
+  return(
+    <div>
+      <h1>Antraste</h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+  )
+}
