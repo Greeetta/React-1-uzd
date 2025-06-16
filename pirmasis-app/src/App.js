@@ -3,11 +3,16 @@ import './App.css';
 import { useEffect, useState} from 'react';
 import Komponentas6 from './Komponentai/komponentas6';
 import Paslaugos from './Paslaugos/Paslaugos';
+import Komp7 from './Komponentai/Komp7';
+import Komp8 from './Komponentai/Komp8';
+import Komp9 from './Komponentai/Komp9';
+
 function App() {
+  const masyvas = [15, 18, 99, 5]
   const [number, setNumber]=useState(7)
   const [btnPresses, setBtnPresses]=useState(0)
   function changeNumber(){
-    setNumber(number+1)
+  setNumber(number+1)
   }
   useEffect(changeNumber,[btnPresses])
   return (
@@ -32,6 +37,9 @@ function App() {
       <Komponentas4/>
       <Komponentas5/>
       <Komponentas6/>
+      <Komp7/>
+      <Komp8/>
+      <Komp9/>
       </header>
     </div>
   );
