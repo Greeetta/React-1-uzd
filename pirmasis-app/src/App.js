@@ -12,6 +12,7 @@ import apieMus from './Komponentai/apiemus';
 import Footer from './Komponentai/footer';
 import Header from './Komponentai/header';
 import Studentai from './Komponentai/studentai';
+import Skaiciai from './Komponentai/skaiciai';
 
 function App() {
   const masyvas = [15, 18, 99, 5]
@@ -34,7 +35,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-    <Studentai/>
+   <Skaiciai/>
         </a>
        <button onClick={()=>{
           setBtnPresses(btnPresses+1)
