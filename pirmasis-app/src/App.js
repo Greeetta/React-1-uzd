@@ -6,6 +6,11 @@ import Paslaugos from './Paslaugos/Paslaugos';
 import Komp7 from './Komponentai/Komp7';
 import Komp8 from './Komponentai/Komp8';
 import Komp9 from './Komponentai/Komp9';
+import Navbar from './Komponentai/Navbar';
+import header from './Komponentai/header';
+import apieMus from './Komponentai/apiemus';
+import Footer from './Komponentai/footer';
+import Header from './Komponentai/header';
 
 function App() {
   const masyvas = [15, 18, 99, 5]
@@ -18,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Paslaugos/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {number} : {btnPresses}
@@ -29,17 +33,16 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-    
+    <Navbar/>
+    <Header/>
+    <Paslaugos/>
+    <apieMus/>
+    <Footer/>
         </a>
-        <button onClick={()=>{
+       <button onClick={()=>{
           setBtnPresses(btnPresses+1)
         }}>ClickMe</button>
-      <Komponentas4/>
-      <Komponentas5/>
-      <Komponentas6/>
-      <Komp7/>
-      <Komp8/>
-      <Komp9/>
+      
       </header>
     </div>
   );
