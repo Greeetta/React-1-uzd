@@ -14,6 +14,7 @@ import Header from './Komponentai/header';
 import Studentai from './Komponentai/studentai';
 import Skaiciai from './Komponentai/skaiciai';
 import Masyvas from './Komponentai/Masyvas';
+import TeigiamiNeigiami from './Komponentai/teigiamineigiami';
 
 function App() {
   const masyvas = [15, 18, 99, 5]
@@ -36,7 +37,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-   <Masyvas/>
+   <TeigiamiNeigiami/>
         </a>
        <button onClick={()=>{
           setBtnPresses(btnPresses+1)
