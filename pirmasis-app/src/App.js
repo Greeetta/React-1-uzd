@@ -16,6 +16,7 @@ import Skaiciai from './Komponentai/5 uzduotis/skaiciai';
 import Masyvas from './Komponentai/6 uzduotis/Masyvas';
 import TeigiamiNeigiami from './Komponentai/7 uzduotis/teigiamineigiami';
 import PrekiuSarasas from './Komponentai/8 uzduotis/Prekes';
+import Zodziai from './Komponentai/10 uzduotis/Zodziai';
 function App() {
   const masyvas = [15, 18, 99, 5]
   const [number, setNumber]=useState(7)
@@ -37,7 +38,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-   <PrekiuSarasas/>
+  <Zodziai/>
         </a>
        <button onClick={()=>{
           setBtnPresses(btnPresses+1)
