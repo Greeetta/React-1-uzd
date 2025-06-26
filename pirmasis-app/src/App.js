@@ -18,6 +18,7 @@ import TeigiamiNeigiami from './Komponentai/7 uzduotis/teigiamineigiami';
 import PrekiuSarasas from './Komponentai/8 uzduotis/Prekes';
 import Zodziai from './Komponentai/10 uzduotis/Zodziai';
 import Knygynas from './Komponentai/11 uzduotis/Knygynas';
+import Tevinis from './Komponentai/12 uzduotis/tevinis';
 function App() {
   const masyvas = [15, 18, 99, 5]
   const [number, setNumber]=useState(7)
@@ -39,7 +40,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-  <Knygynas/>
+ <Tevinis/>
         </a>
        <button onClick={()=>{
           setBtnPresses(btnPresses+1)
